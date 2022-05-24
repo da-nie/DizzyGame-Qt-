@@ -43,56 +43,54 @@ OBJECTS_DIR   = release/
 
 ####### Files
 
-SOURCES       = ../DizzyGame/main.cpp \
-		../DizzyGame/cmainwindow.cpp \
-		../DizzyGame/cactionadditem.cpp \
-		../DizzyGame/cactionaddlife.cpp \
-		../DizzyGame/cactionaddscore.cpp \
-		../DizzyGame/cactionchangeanimationmode.cpp \
-		../DizzyGame/cactionchangedescription.cpp \
-		../DizzyGame/cactionchangedescriptionglobal.cpp \
-		../DizzyGame/cactionchangename.cpp \
-		../DizzyGame/cactionchangenameglobal.cpp \
-		../DizzyGame/cactionchangeposition.cpp \
-		../DizzyGame/cactioncopyposition.cpp \
-		../DizzyGame/cactioncopypositionoffset.cpp \
-		../DizzyGame/cactionenergyupdate.cpp \
-		../DizzyGame/cactionmessage.cpp \
-		../DizzyGame/cactionmove.cpp \
-		../DizzyGame/cactionpickup.cpp \
-		../DizzyGame/cactionsetanimationstep.cpp \
-		../DizzyGame/cactionsetenabled.cpp \
-		../DizzyGame/cactionsingle.cpp \
-		../DizzyGame/cautomath.cpp \
-		../DizzyGame/cconditionalofdizzyintersection.cpp \
-		../DizzyGame/cconditionalofintersection.cpp \
-		../DizzyGame/cconditionalofnotdizzyintersection.cpp \
-		../DizzyGame/cconditionalofpickup.cpp \
-		../DizzyGame/cconditionaloftimer.cpp \
-		../DizzyGame/cconditionalofuse.cpp \
-		../DizzyGame/cdizzy.cpp \
-		../DizzyGame/cfontprinter.cpp \
-		../DizzyGame/cgame.cpp \
-		../DizzyGame/cgamestate.cpp \
-		../DizzyGame/clexeme.cpp \
-		../DizzyGame/clexicalanalyzer.cpp \
-		../DizzyGame/cpart.cpp \
-		../DizzyGame/craiifilein.cpp \
-		../DizzyGame/craiifileout.cpp \
-		../DizzyGame/csprite.cpp \
-		../DizzyGame/csyntaxanalyzer.cpp \
-		../DizzyGame/ctile.cpp \
-		../DizzyGame/ctilessequence.cpp \
-		../DizzyGame/cvideo_software.cpp \
-		../DizzyGame/iaction.cpp \
-		../DizzyGame/iconditionalexpression.cpp \
-		../DizzyGame/ipart.cpp \
-		../DizzyGame/ivideo.cpp \
-		../DizzyGame/system.cpp \
-		../DizzyGame/tga.cpp release/moc_cmainwindow.cpp
-OBJECTS       = release/main.o \
-		release/cmainwindow.o \
-		release/cactionadditem.o \
+SOURCES       = ../DizzyGame/Actions/cactionadditem.cpp \
+		../DizzyGame/Actions/cactionaddlife.cpp \
+		../DizzyGame/Actions/cactionaddscore.cpp \
+		../DizzyGame/Actions/cactionchangeanimationmode.cpp \
+		../DizzyGame/Actions/cactionchangedescription.cpp \
+		../DizzyGame/Actions/cactionchangedescriptionglobal.cpp \
+		../DizzyGame/Actions/cactionchangename.cpp \
+		../DizzyGame/Actions/cactionchangenameglobal.cpp \
+		../DizzyGame/Actions/cactionchangeposition.cpp \
+		../DizzyGame/Actions/cactioncopyposition.cpp \
+		../DizzyGame/Actions/cactioncopypositionoffset.cpp \
+		../DizzyGame/Actions/cactionenergyupdate.cpp \
+		../DizzyGame/Actions/cactionmessage.cpp \
+		../DizzyGame/Actions/cactionmove.cpp \
+		../DizzyGame/Actions/cactionpickup.cpp \
+		../DizzyGame/Actions/cactionsetanimationstep.cpp \
+		../DizzyGame/Actions/cactionsetenabled.cpp \
+		../DizzyGame/Actions/cactionsingle.cpp \
+		../DizzyGame/Actions/iaction.cpp \
+		../DizzyGame/Conditionals/cconditionalofdizzyintersection.cpp \
+		../DizzyGame/Conditionals/cconditionalofintersection.cpp \
+		../DizzyGame/Conditionals/cconditionalofnotdizzyintersection.cpp \
+		../DizzyGame/Conditionals/cconditionalofpickup.cpp \
+		../DizzyGame/Conditionals/cconditionaloftimer.cpp \
+		../DizzyGame/Conditionals/cconditionalofuse.cpp \
+		../DizzyGame/Conditionals/iconditionalexpression.cpp \
+		../DizzyGame/Game/cdizzy.cpp \
+		../DizzyGame/Game/cgame.cpp \
+		../DizzyGame/Game/cgamestate.cpp \
+		../DizzyGame/Game/cpart.cpp \
+		../DizzyGame/Game/ipart.cpp \
+		../DizzyGame/Graphics/cfontprinter.cpp \
+		../DizzyGame/Graphics/csprite.cpp \
+		../DizzyGame/Graphics/ctile.cpp \
+		../DizzyGame/Graphics/ctilessequence.cpp \
+		../DizzyGame/Graphics/tga.cpp \
+		../DizzyGame/Interpreter/cautomath.cpp \
+		../DizzyGame/Interpreter/clexeme.cpp \
+		../DizzyGame/Interpreter/clexicalanalyzer.cpp \
+		../DizzyGame/Interpreter/csyntaxanalyzer.cpp \
+		../DizzyGame/IO/craiifilein.cpp \
+		../DizzyGame/IO/craiifileout.cpp \
+		../DizzyGame/QtWindows/cmainwindow.cpp \
+		../DizzyGame/QtWindows/main.cpp \
+		../DizzyGame/System/system.cpp \
+		../DizzyGame/Video/cvideo_software.cpp \
+		../DizzyGame/Video/ivideo.cpp release/moc_cmainwindow.cpp
+OBJECTS       = release/cactionadditem.o \
 		release/cactionaddlife.o \
 		release/cactionaddscore.o \
 		release/cactionchangeanimationmode.o \
@@ -110,127 +108,160 @@ OBJECTS       = release/main.o \
 		release/cactionsetanimationstep.o \
 		release/cactionsetenabled.o \
 		release/cactionsingle.o \
-		release/cautomath.o \
+		release/iaction.o \
 		release/cconditionalofdizzyintersection.o \
 		release/cconditionalofintersection.o \
 		release/cconditionalofnotdizzyintersection.o \
 		release/cconditionalofpickup.o \
 		release/cconditionaloftimer.o \
 		release/cconditionalofuse.o \
+		release/iconditionalexpression.o \
 		release/cdizzy.o \
-		release/cfontprinter.o \
 		release/cgame.o \
 		release/cgamestate.o \
-		release/clexeme.o \
-		release/clexicalanalyzer.o \
 		release/cpart.o \
-		release/craiifilein.o \
-		release/craiifileout.o \
+		release/ipart.o \
+		release/cfontprinter.o \
 		release/csprite.o \
-		release/csyntaxanalyzer.o \
 		release/ctile.o \
 		release/ctilessequence.o \
-		release/cvideo_software.o \
-		release/iaction.o \
-		release/iconditionalexpression.o \
-		release/ipart.o \
-		release/ivideo.o \
-		release/system.o \
 		release/tga.o \
+		release/cautomath.o \
+		release/clexeme.o \
+		release/clexicalanalyzer.o \
+		release/csyntaxanalyzer.o \
+		release/craiifilein.o \
+		release/craiifileout.o \
+		release/cmainwindow.o \
+		release/main.o \
+		release/system.o \
+		release/cvideo_software.o \
+		release/ivideo.o \
 		release/moc_cmainwindow.o
 
-DIST          = license.txt ../DizzyGame/cmainwindow.h \
-		../DizzyGame/cactionadditem.h \
-		../DizzyGame/cactionaddlife.h \
-		../DizzyGame/cactionaddscore.h \
-		../DizzyGame/cactionchangeanimationmode.h \
-		../DizzyGame/cactionchangedescription.h \
-		../DizzyGame/cactionchangedescriptionglobal.h \
-		../DizzyGame/cactionchangename.h \
-		../DizzyGame/cactionchangenameglobal.h \
-		../DizzyGame/cactionchangeposition.h \
-		../DizzyGame/cactioncopyposition.h \
-		../DizzyGame/cactioncopypositionoffset.h \
-		../DizzyGame/cactionenergyupdate.h \
-		../DizzyGame/cactionmessage.h \
-		../DizzyGame/cactionmove.h \
-		../DizzyGame/cactionpickup.h \
-		../DizzyGame/cactionsetanimationstep.h \
-		../DizzyGame/cactionsetenabled.h \
-		../DizzyGame/cactionsingle.h \
-		../DizzyGame/cautomath.h \
-		../DizzyGame/cconditionalofdizzyintersection.h \
-		../DizzyGame/cconditionalofintersection.h \
-		../DizzyGame/cconditionalofnotdizzyintersection.h \
-		../DizzyGame/cconditionalofpickup.h \
-		../DizzyGame/cconditionaloftimer.h \
-		../DizzyGame/cconditionalofuse.h \
-		../DizzyGame/cdizzy.h \
-		../DizzyGame/cfontprinter.h \
-		../DizzyGame/cgame.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/clexeme.h \
-		../DizzyGame/clexicalanalyzer.h \
-		../DizzyGame/cpart.h \
-		../DizzyGame/craiifilein.h \
-		../DizzyGame/craiifileout.h \
-		../DizzyGame/csprite.h \
-		../DizzyGame/csyntaxanalyzer.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/cvideo_software.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/iconditionalexpression.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ivideo.h \
-		../DizzyGame/system.h \
-		../DizzyGame/tga.h ../DizzyGame/main.cpp \
-		../DizzyGame/cmainwindow.cpp \
-		../DizzyGame/cactionadditem.cpp \
-		../DizzyGame/cactionaddlife.cpp \
-		../DizzyGame/cactionaddscore.cpp \
-		../DizzyGame/cactionchangeanimationmode.cpp \
-		../DizzyGame/cactionchangedescription.cpp \
-		../DizzyGame/cactionchangedescriptionglobal.cpp \
-		../DizzyGame/cactionchangename.cpp \
-		../DizzyGame/cactionchangenameglobal.cpp \
-		../DizzyGame/cactionchangeposition.cpp \
-		../DizzyGame/cactioncopyposition.cpp \
-		../DizzyGame/cactioncopypositionoffset.cpp \
-		../DizzyGame/cactionenergyupdate.cpp \
-		../DizzyGame/cactionmessage.cpp \
-		../DizzyGame/cactionmove.cpp \
-		../DizzyGame/cactionpickup.cpp \
-		../DizzyGame/cactionsetanimationstep.cpp \
-		../DizzyGame/cactionsetenabled.cpp \
-		../DizzyGame/cactionsingle.cpp \
-		../DizzyGame/cautomath.cpp \
-		../DizzyGame/cconditionalofdizzyintersection.cpp \
-		../DizzyGame/cconditionalofintersection.cpp \
-		../DizzyGame/cconditionalofnotdizzyintersection.cpp \
-		../DizzyGame/cconditionalofpickup.cpp \
-		../DizzyGame/cconditionaloftimer.cpp \
-		../DizzyGame/cconditionalofuse.cpp \
-		../DizzyGame/cdizzy.cpp \
-		../DizzyGame/cfontprinter.cpp \
-		../DizzyGame/cgame.cpp \
-		../DizzyGame/cgamestate.cpp \
-		../DizzyGame/clexeme.cpp \
-		../DizzyGame/clexicalanalyzer.cpp \
-		../DizzyGame/cpart.cpp \
-		../DizzyGame/craiifilein.cpp \
-		../DizzyGame/craiifileout.cpp \
-		../DizzyGame/csprite.cpp \
-		../DizzyGame/csyntaxanalyzer.cpp \
-		../DizzyGame/ctile.cpp \
-		../DizzyGame/ctilessequence.cpp \
-		../DizzyGame/cvideo_software.cpp \
-		../DizzyGame/iaction.cpp \
-		../DizzyGame/iconditionalexpression.cpp \
-		../DizzyGame/ipart.cpp \
-		../DizzyGame/ivideo.cpp \
-		../DizzyGame/system.cpp \
-		../DizzyGame/tga.cpp
+DIST          = license.txt \
+		Release/Dizzy.exe \
+		Release/Sprites/header.BMP \
+		Release/Sprites/screen_frame.BMP \
+		Release/Tiles/tiles.BMP \
+		Release/Tiles/tiles_barrier.BMP \
+		Release/map.gam \
+		Release/Sprites/dizzy.TGA \
+		Release/Sprites/font.TGA \
+		Release/Sprites/frame.TGA \
+		Release/Sprites/header.TGA \
+		Release/Sprites/screen_frame.TGA \
+		Release/Tiles/tiles.TGA \
+		Release/Tiles/tiles_barrier \
+		(old).tga \
+		Release/Tiles/tiles_barrier.TGA \
+		Release/ScreenPlay/block.txt \
+		Release/ScreenPlay/bridge.txt \
+		Release/ScreenPlay/cat.txt \
+		Release/ScreenPlay/danger_water.txt \
+		Release/ScreenPlay/descriptions.txt \
+		Release/ScreenPlay/drop_fire.txt \
+		Release/ScreenPlay/fire.txt \
+		Release/ScreenPlay/pickup.txt \
+		Release/ScreenPlay/pit.txt \
+		Release/ScreenPlay/platform_left_right.txt \
+		Release/ScreenPlay/platform_up_down.txt \
+		Release/ScreenPlay/positions.txt \
+		Release/ScreenPlay/water.txt \
+		Release/DELETE.BAT \
+		Release/Dizzy.Build.CppClean.log \
+		Release/Dizzy.log ../DizzyGame/Actions/cactionadditem.h \
+		../DizzyGame/Actions/cactionaddlife.h \
+		../DizzyGame/Actions/cactionaddscore.h \
+		../DizzyGame/Actions/cactionchangeanimationmode.h \
+		../DizzyGame/Actions/cactionchangedescription.h \
+		../DizzyGame/Actions/cactionchangedescriptionglobal.h \
+		../DizzyGame/Actions/cactionchangename.h \
+		../DizzyGame/Actions/cactionchangenameglobal.h \
+		../DizzyGame/Actions/cactionchangeposition.h \
+		../DizzyGame/Actions/cactioncopyposition.h \
+		../DizzyGame/Actions/cactioncopypositionoffset.h \
+		../DizzyGame/Actions/cactionenergyupdate.h \
+		../DizzyGame/Actions/cactionmessage.h \
+		../DizzyGame/Actions/cactionmove.h \
+		../DizzyGame/Actions/cactionpickup.h \
+		../DizzyGame/Actions/cactionsetanimationstep.h \
+		../DizzyGame/Actions/cactionsetenabled.h \
+		../DizzyGame/Actions/cactionsingle.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Conditionals/cconditionalofdizzyintersection.h \
+		../DizzyGame/Conditionals/cconditionalofintersection.h \
+		../DizzyGame/Conditionals/cconditionalofnotdizzyintersection.h \
+		../DizzyGame/Conditionals/cconditionalofpickup.h \
+		../DizzyGame/Conditionals/cconditionaloftimer.h \
+		../DizzyGame/Conditionals/cconditionalofuse.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h \
+		../DizzyGame/Game/cdizzy.h \
+		../DizzyGame/Game/cgame.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Game/cpart.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/cfontprinter.h \
+		../DizzyGame/Graphics/csprite.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/tga.h \
+		../DizzyGame/Interpreter/cautomath.h \
+		../DizzyGame/Interpreter/clexeme.h \
+		../DizzyGame/Interpreter/clexicalanalyzer.h \
+		../DizzyGame/Interpreter/csyntaxanalyzer.h \
+		../DizzyGame/IO/craiifilein.h \
+		../DizzyGame/IO/craiifileout.h \
+		../DizzyGame/QtWindows/cmainwindow.h \
+		../DizzyGame/System/system.h \
+		../DizzyGame/Video/cvideo_software.h \
+		../DizzyGame/Video/ivideo.h ../DizzyGame/Actions/cactionadditem.cpp \
+		../DizzyGame/Actions/cactionaddlife.cpp \
+		../DizzyGame/Actions/cactionaddscore.cpp \
+		../DizzyGame/Actions/cactionchangeanimationmode.cpp \
+		../DizzyGame/Actions/cactionchangedescription.cpp \
+		../DizzyGame/Actions/cactionchangedescriptionglobal.cpp \
+		../DizzyGame/Actions/cactionchangename.cpp \
+		../DizzyGame/Actions/cactionchangenameglobal.cpp \
+		../DizzyGame/Actions/cactionchangeposition.cpp \
+		../DizzyGame/Actions/cactioncopyposition.cpp \
+		../DizzyGame/Actions/cactioncopypositionoffset.cpp \
+		../DizzyGame/Actions/cactionenergyupdate.cpp \
+		../DizzyGame/Actions/cactionmessage.cpp \
+		../DizzyGame/Actions/cactionmove.cpp \
+		../DizzyGame/Actions/cactionpickup.cpp \
+		../DizzyGame/Actions/cactionsetanimationstep.cpp \
+		../DizzyGame/Actions/cactionsetenabled.cpp \
+		../DizzyGame/Actions/cactionsingle.cpp \
+		../DizzyGame/Actions/iaction.cpp \
+		../DizzyGame/Conditionals/cconditionalofdizzyintersection.cpp \
+		../DizzyGame/Conditionals/cconditionalofintersection.cpp \
+		../DizzyGame/Conditionals/cconditionalofnotdizzyintersection.cpp \
+		../DizzyGame/Conditionals/cconditionalofpickup.cpp \
+		../DizzyGame/Conditionals/cconditionaloftimer.cpp \
+		../DizzyGame/Conditionals/cconditionalofuse.cpp \
+		../DizzyGame/Conditionals/iconditionalexpression.cpp \
+		../DizzyGame/Game/cdizzy.cpp \
+		../DizzyGame/Game/cgame.cpp \
+		../DizzyGame/Game/cgamestate.cpp \
+		../DizzyGame/Game/cpart.cpp \
+		../DizzyGame/Game/ipart.cpp \
+		../DizzyGame/Graphics/cfontprinter.cpp \
+		../DizzyGame/Graphics/csprite.cpp \
+		../DizzyGame/Graphics/ctile.cpp \
+		../DizzyGame/Graphics/ctilessequence.cpp \
+		../DizzyGame/Graphics/tga.cpp \
+		../DizzyGame/Interpreter/cautomath.cpp \
+		../DizzyGame/Interpreter/clexeme.cpp \
+		../DizzyGame/Interpreter/clexicalanalyzer.cpp \
+		../DizzyGame/Interpreter/csyntaxanalyzer.cpp \
+		../DizzyGame/IO/craiifilein.cpp \
+		../DizzyGame/IO/craiifileout.cpp \
+		../DizzyGame/QtWindows/cmainwindow.cpp \
+		../DizzyGame/QtWindows/main.cpp \
+		../DizzyGame/System/system.cpp \
+		../DizzyGame/Video/cvideo_software.cpp \
+		../DizzyGame/Video/ivideo.cpp
 QMAKE_TARGET  = DizzyGame
 DESTDIR        = release/ #avoid trailing-slash linebreak
 TARGET         = DizzyGame.exe
@@ -253,7 +284,7 @@ dist:
 	$(ZIP) DizzyGame.zip $(SOURCES) $(DIST) ../DizzyGame/DizzyGame.pro E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/spec_pre.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/qdevice.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/device_config.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/common/angle.conf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/qconfig.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dcore.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dcore_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dextras.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dextras_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dinput.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dinput_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dlogic.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dlogic_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dquick.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dquick_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dquickextras.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dquickextras_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dquickinput.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dquickinput_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dquickrender.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3dquickrender_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3drender.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_3drender_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_axbase.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_axbase_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_axcontainer.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_axcontainer_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_axserver.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_axserver_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_bluetooth.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_bluetooth_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_bootstrap_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_clucene_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_concurrent.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_concurrent_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_core.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_core_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_dbus.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_dbus_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_designer.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_designer_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_designercomponents_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_gamepad.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_gamepad_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_gui.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_gui_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_help.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_help_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_location.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_location_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_multimedia.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_multimedia_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_multimediawidgets.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_multimediawidgets_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_network.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_network_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_nfc.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_nfc_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_opengl.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_opengl_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_openglextensions.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_openglextensions_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_packetprotocol_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_platformsupport_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_positioning.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_positioning_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_printsupport.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_printsupport_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_purchasing.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_purchasing_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_qml.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_qml_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_qmldebug_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_qmldevtools_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_qmltest.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_qmltest_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_quick.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_quick_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_quickcontrols2.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_quickcontrols2_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_quickparticles_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_quicktemplates2_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_quickwidgets.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_quickwidgets_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_script.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_script_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_scripttools.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_scripttools_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_scxml.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_scxml_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_sensors.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_sensors_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_serialbus.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_serialbus_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_serialport.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_serialport_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_sql.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_sql_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_svg.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_svg_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_testlib.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_testlib_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_uiplugin.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_uitools.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_uitools_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_webchannel.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_webchannel_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_websockets.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_websockets_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_widgets.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_widgets_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_winextras.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_winextras_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_xml.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_xml_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_xmlpatterns.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/modules/qt_lib_xmlpatterns_private.pri E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/qt_functions.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/qt_config.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/win32/qt_config.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/win32-g++/qmake.conf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/spec_post.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/exclusive_builds.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/default_pre.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/win32/default_pre.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/resolve_config.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/exclusive_builds_post.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/default_post.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/build_pass.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/win32/rtti.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/precompile_header.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/warn_on.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/qt.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/resources.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/moc.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/win32/opengl.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/uic.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/file_copies.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/win32/windows.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/testcase_targets.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/exceptions.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/yacc.prf E:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/features/lex.prf ../DizzyGame/DizzyGame.pro E:/Lang/Qt5.7.0/5.7/mingw53_32/lib/qtmain.prl E:/Lang/Qt5.7.0/5.7/mingw53_32/lib/Qt5Widgets.prl E:/Lang/Qt5.7.0/5.7/mingw53_32/lib/Qt5Gui.prl E:/Lang/Qt5.7.0/5.7/mingw53_32/lib/Qt5Core.prl  NO_PCH_SOURCES RESOURCES HEADERS SOURCES OBJECTIVE_SOURCES FORMS YACCSOURCES YACCSOURCES LEXSOURCES 
 
 clean: compiler_clean 
-	-$(DEL_FILE) release/main.o release/cmainwindow.o release/cactionadditem.o release/cactionaddlife.o release/cactionaddscore.o release/cactionchangeanimationmode.o release/cactionchangedescription.o release/cactionchangedescriptionglobal.o release/cactionchangename.o release/cactionchangenameglobal.o release/cactionchangeposition.o release/cactioncopyposition.o release/cactioncopypositionoffset.o release/cactionenergyupdate.o release/cactionmessage.o release/cactionmove.o release/cactionpickup.o release/cactionsetanimationstep.o release/cactionsetenabled.o release/cactionsingle.o release/cautomath.o release/cconditionalofdizzyintersection.o release/cconditionalofintersection.o release/cconditionalofnotdizzyintersection.o release/cconditionalofpickup.o release/cconditionaloftimer.o release/cconditionalofuse.o release/cdizzy.o release/cfontprinter.o release/cgame.o release/cgamestate.o release/clexeme.o release/clexicalanalyzer.o release/cpart.o release/craiifilein.o release/craiifileout.o release/csprite.o release/csyntaxanalyzer.o release/ctile.o release/ctilessequence.o release/cvideo_software.o release/iaction.o release/iconditionalexpression.o release/ipart.o release/ivideo.o release/system.o release/tga.o release/moc_cmainwindow.o
+	-$(DEL_FILE) release/cactionadditem.o release/cactionaddlife.o release/cactionaddscore.o release/cactionchangeanimationmode.o release/cactionchangedescription.o release/cactionchangedescriptionglobal.o release/cactionchangename.o release/cactionchangenameglobal.o release/cactionchangeposition.o release/cactioncopyposition.o release/cactioncopypositionoffset.o release/cactionenergyupdate.o release/cactionmessage.o release/cactionmove.o release/cactionpickup.o release/cactionsetanimationstep.o release/cactionsetenabled.o release/cactionsingle.o release/iaction.o release/cconditionalofdizzyintersection.o release/cconditionalofintersection.o release/cconditionalofnotdizzyintersection.o release/cconditionalofpickup.o release/cconditionaloftimer.o release/cconditionalofuse.o release/iconditionalexpression.o release/cdizzy.o release/cgame.o release/cgamestate.o release/cpart.o release/ipart.o release/cfontprinter.o release/csprite.o release/ctile.o release/ctilessequence.o release/tga.o release/cautomath.o release/clexeme.o release/clexicalanalyzer.o release/csyntaxanalyzer.o release/craiifilein.o release/craiifileout.o release/cmainwindow.o release/main.o release/system.o release/cvideo_software.o release/ivideo.o release/moc_cmainwindow.o
 
 distclean: clean 
 	-$(DEL_FILE) $(DESTDIR_TARGET)
@@ -374,20 +405,20 @@ release/moc_cmainwindow.cpp: E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QM
 		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qtouchdevice.h \
 		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtabwidget.h \
 		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qicon.h \
-		../DizzyGame/ivideo.h \
-		../DizzyGame/cgame.h \
-		../DizzyGame/cfontprinter.h \
-		../DizzyGame/csprite.h \
-		../DizzyGame/tga.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/iconditionalexpression.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/cdizzy.h \
-		../DizzyGame/cmainwindow.h \
+		../DizzyGame/Video/ivideo.h \
+		../DizzyGame/Game/cgame.h \
+		../DizzyGame/Graphics/cfontprinter.h \
+		../DizzyGame/Graphics/csprite.h \
+		../DizzyGame/Graphics/tga.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Game/cdizzy.h \
+		../DizzyGame/QtWindows/cmainwindow.h \
 		E:/Lang/Qt5.7.0/5.7/mingw53_32/bin/moc.exe
-	'E:\Lang\Qt5.7.0\5.7\mingw53_32\bin\moc.exe' $(DEFINES) -D__GNUC__ -DWIN32 -IE:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/win32-g++ -ID:/Working/FromQt/DizzyGame/DizzyGame -IE:/Lang/Qt5.7.0/5.7/mingw53_32/include -IE:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets -IE:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui -IE:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtANGLE -IE:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore -I. ../DizzyGame/cmainwindow.h -o release/moc_cmainwindow.cpp
+	'E:\Lang\Qt5.7.0\5.7\mingw53_32\bin\moc.exe' $(DEFINES) -D__GNUC__ -DWIN32 -IE:/Lang/Qt5.7.0/5.7/mingw53_32/mkspecs/win32-g++ -ID:/Working/FromQt/DizzyGame/DizzyGame -IE:/Lang/Qt5.7.0/5.7/mingw53_32/include -IE:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets -IE:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui -IE:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtANGLE -IE:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore -I. ../DizzyGame/QtWindows/cmainwindow.h -o release/moc_cmainwindow.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -410,128 +441,354 @@ compiler_clean: compiler_moc_header_clean compiler_uic_clean
 
 ####### Compile
 
-release/main.o: ../DizzyGame/main.cpp ../DizzyGame/cmainwindow.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QMainWindow \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qmainwindow.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qwidget.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qwindowdefs.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qglobal.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qconfig.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qfeatures.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qsystemdetection.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qprocessordetection.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qcompilerdetection.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qtypeinfo.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qtypetraits.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qisenum.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qsysinfo.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qlogging.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qflags.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qatomic.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qbasicatomic.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qatomic_bootstrap.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qgenericatomic.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qatomic_cxx11.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qatomic_msvc.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qglobalstatic.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qmutex.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qnumeric.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qversiontagging.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qobjectdefs.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qnamespace.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qobjectdefs_impl.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qwindowdefs_win.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qobject.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qstring.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qchar.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qbytearray.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qrefcount.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qarraydata.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qstringbuilder.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qlist.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qalgorithms.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qiterator.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qhashfunctions.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qpair.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qbytearraylist.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qstringlist.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qregexp.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qstringmatcher.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qcoreevent.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qscopedpointer.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qmetatype.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qvarlengtharray.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qcontainerfwd.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qobject_impl.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qmargins.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qpaintdevice.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qrect.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qsize.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qpoint.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qpalette.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qcolor.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qrgb.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qrgba64.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qbrush.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qvector.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qmatrix.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qpolygon.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qregion.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qdatastream.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qiodevice.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qline.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qtransform.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qpainterpath.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qimage.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qpixelformat.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qpixmap.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qsharedpointer.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qshareddata.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qhash.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qsharedpointer_impl.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qfont.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qfontmetrics.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qfontinfo.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qsizepolicy.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qcursor.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qkeysequence.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qevent.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qvariant.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qmap.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qdebug.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qtextstream.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qlocale.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qset.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qcontiguouscache.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qurl.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qurlquery.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qfile.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qfiledevice.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qvector2d.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qtouchdevice.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtabwidget.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qicon.h \
-		../DizzyGame/ivideo.h \
-		../DizzyGame/cgame.h \
-		../DizzyGame/cfontprinter.h \
-		../DizzyGame/csprite.h \
-		../DizzyGame/tga.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/iconditionalexpression.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/cdizzy.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QApplication \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qcoreapplication.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qeventloop.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qinputmethod.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/main.o ../DizzyGame/main.cpp
+release/cactionadditem.o: ../DizzyGame/Actions/cactionadditem.cpp ../DizzyGame/Actions/cactionadditem.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionadditem.o ../DizzyGame/Actions/cactionadditem.cpp
 
-release/cmainwindow.o: ../DizzyGame/cmainwindow.cpp ../DizzyGame/cmainwindow.h \
+release/cactionaddlife.o: ../DizzyGame/Actions/cactionaddlife.cpp ../DizzyGame/Actions/cactionaddlife.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionaddlife.o ../DizzyGame/Actions/cactionaddlife.cpp
+
+release/cactionaddscore.o: ../DizzyGame/Actions/cactionaddscore.cpp ../DizzyGame/Actions/cactionaddscore.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionaddscore.o ../DizzyGame/Actions/cactionaddscore.cpp
+
+release/cactionchangeanimationmode.o: ../DizzyGame/Actions/cactionchangeanimationmode.cpp ../DizzyGame/Actions/cactionchangeanimationmode.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionchangeanimationmode.o ../DizzyGame/Actions/cactionchangeanimationmode.cpp
+
+release/cactionchangedescription.o: ../DizzyGame/Actions/cactionchangedescription.cpp ../DizzyGame/Actions/cactionchangedescription.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionchangedescription.o ../DizzyGame/Actions/cactionchangedescription.cpp
+
+release/cactionchangedescriptionglobal.o: ../DizzyGame/Actions/cactionchangedescriptionglobal.cpp ../DizzyGame/Actions/cactionchangedescriptionglobal.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionchangedescriptionglobal.o ../DizzyGame/Actions/cactionchangedescriptionglobal.cpp
+
+release/cactionchangename.o: ../DizzyGame/Actions/cactionchangename.cpp ../DizzyGame/Actions/cactionchangename.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionchangename.o ../DizzyGame/Actions/cactionchangename.cpp
+
+release/cactionchangenameglobal.o: ../DizzyGame/Actions/cactionchangenameglobal.cpp ../DizzyGame/Actions/cactionchangenameglobal.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionchangenameglobal.o ../DizzyGame/Actions/cactionchangenameglobal.cpp
+
+release/cactionchangeposition.o: ../DizzyGame/Actions/cactionchangeposition.cpp ../DizzyGame/Actions/cactionchangeposition.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionchangeposition.o ../DizzyGame/Actions/cactionchangeposition.cpp
+
+release/cactioncopyposition.o: ../DizzyGame/Actions/cactioncopyposition.cpp ../DizzyGame/Actions/cactioncopyposition.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactioncopyposition.o ../DizzyGame/Actions/cactioncopyposition.cpp
+
+release/cactioncopypositionoffset.o: ../DizzyGame/Actions/cactioncopypositionoffset.cpp ../DizzyGame/Actions/cactioncopypositionoffset.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactioncopypositionoffset.o ../DizzyGame/Actions/cactioncopypositionoffset.cpp
+
+release/cactionenergyupdate.o: ../DizzyGame/Actions/cactionenergyupdate.cpp ../DizzyGame/Actions/cactionenergyupdate.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionenergyupdate.o ../DizzyGame/Actions/cactionenergyupdate.cpp
+
+release/cactionmessage.o: ../DizzyGame/Actions/cactionmessage.cpp ../DizzyGame/Actions/cactionmessage.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionmessage.o ../DizzyGame/Actions/cactionmessage.cpp
+
+release/cactionmove.o: ../DizzyGame/Actions/cactionmove.cpp ../DizzyGame/Actions/cactionmove.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionmove.o ../DizzyGame/Actions/cactionmove.cpp
+
+release/cactionpickup.o: ../DizzyGame/Actions/cactionpickup.cpp ../DizzyGame/Actions/cactionpickup.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionpickup.o ../DizzyGame/Actions/cactionpickup.cpp
+
+release/cactionsetanimationstep.o: ../DizzyGame/Actions/cactionsetanimationstep.cpp ../DizzyGame/Actions/cactionsetanimationstep.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionsetanimationstep.o ../DizzyGame/Actions/cactionsetanimationstep.cpp
+
+release/cactionsetenabled.o: ../DizzyGame/Actions/cactionsetenabled.cpp ../DizzyGame/Actions/cactionsetenabled.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionsetenabled.o ../DizzyGame/Actions/cactionsetenabled.cpp
+
+release/cactionsingle.o: ../DizzyGame/Actions/cactionsingle.cpp ../DizzyGame/Actions/cactionsingle.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionsingle.o ../DizzyGame/Actions/cactionsingle.cpp
+
+release/iaction.o: ../DizzyGame/Actions/iaction.cpp ../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/iaction.o ../DizzyGame/Actions/iaction.cpp
+
+release/cconditionalofdizzyintersection.o: ../DizzyGame/Conditionals/cconditionalofdizzyintersection.cpp ../DizzyGame/Conditionals/cconditionalofdizzyintersection.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/cgamestate.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cconditionalofdizzyintersection.o ../DizzyGame/Conditionals/cconditionalofdizzyintersection.cpp
+
+release/cconditionalofintersection.o: ../DizzyGame/Conditionals/cconditionalofintersection.cpp ../DizzyGame/Conditionals/cconditionalofintersection.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/cgamestate.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cconditionalofintersection.o ../DizzyGame/Conditionals/cconditionalofintersection.cpp
+
+release/cconditionalofnotdizzyintersection.o: ../DizzyGame/Conditionals/cconditionalofnotdizzyintersection.cpp ../DizzyGame/Conditionals/cconditionalofnotdizzyintersection.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/cgamestate.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cconditionalofnotdizzyintersection.o ../DizzyGame/Conditionals/cconditionalofnotdizzyintersection.cpp
+
+release/cconditionalofpickup.o: ../DizzyGame/Conditionals/cconditionalofpickup.cpp ../DizzyGame/Conditionals/cconditionalofpickup.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/cgamestate.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cconditionalofpickup.o ../DizzyGame/Conditionals/cconditionalofpickup.cpp
+
+release/cconditionaloftimer.o: ../DizzyGame/Conditionals/cconditionaloftimer.cpp ../DizzyGame/Conditionals/cconditionaloftimer.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/cgamestate.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cconditionaloftimer.o ../DizzyGame/Conditionals/cconditionaloftimer.cpp
+
+release/cconditionalofuse.o: ../DizzyGame/Conditionals/cconditionalofuse.cpp ../DizzyGame/Conditionals/cconditionalofuse.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/cgamestate.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cconditionalofuse.o ../DizzyGame/Conditionals/cconditionalofuse.cpp
+
+release/iconditionalexpression.o: ../DizzyGame/Conditionals/iconditionalexpression.cpp ../DizzyGame/Conditionals/iconditionalexpression.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/iconditionalexpression.o ../DizzyGame/Conditionals/iconditionalexpression.cpp
+
+release/cdizzy.o: ../DizzyGame/Game/cdizzy.cpp ../DizzyGame/Game/cdizzy.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cdizzy.o ../DizzyGame/Game/cdizzy.cpp
+
+release/cgame.o: ../DizzyGame/Game/cgame.cpp ../DizzyGame/Game/cgame.h \
+		../DizzyGame/Video/ivideo.h \
+		../DizzyGame/Graphics/cfontprinter.h \
+		../DizzyGame/Graphics/csprite.h \
+		../DizzyGame/Graphics/tga.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Game/cdizzy.h \
+		../DizzyGame/Game/cpart.h \
+		../DizzyGame/Interpreter/csyntaxanalyzer.h \
+		../DizzyGame/Interpreter/clexicalanalyzer.h \
+		../DizzyGame/Interpreter/cautomath.h \
+		../DizzyGame/Interpreter/clexeme.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/System/system.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cgame.o ../DizzyGame/Game/cgame.cpp
+
+release/cgamestate.o: ../DizzyGame/Game/cgamestate.cpp ../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cgamestate.o ../DizzyGame/Game/cgamestate.cpp
+
+release/cpart.o: ../DizzyGame/Game/cpart.cpp ../DizzyGame/Game/cpart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Game/ipart.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cpart.o ../DizzyGame/Game/cpart.cpp
+
+release/ipart.o: ../DizzyGame/Game/ipart.cpp ../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/ipart.o ../DizzyGame/Game/ipart.cpp
+
+release/cfontprinter.o: ../DizzyGame/Graphics/cfontprinter.cpp ../DizzyGame/Graphics/cfontprinter.h \
+		../DizzyGame/Video/ivideo.h \
+		../DizzyGame/Graphics/csprite.h \
+		../DizzyGame/Graphics/tga.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cfontprinter.o ../DizzyGame/Graphics/cfontprinter.cpp
+
+release/csprite.o: ../DizzyGame/Graphics/csprite.cpp ../DizzyGame/Graphics/csprite.h \
+		../DizzyGame/Video/ivideo.h \
+		../DizzyGame/Graphics/tga.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/csprite.o ../DizzyGame/Graphics/csprite.cpp
+
+release/ctile.o: ../DizzyGame/Graphics/ctile.cpp ../DizzyGame/Graphics/ctile.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/ctile.o ../DizzyGame/Graphics/ctile.cpp
+
+release/ctilessequence.o: ../DizzyGame/Graphics/ctilessequence.cpp ../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/ctilessequence.o ../DizzyGame/Graphics/ctilessequence.cpp
+
+release/tga.o: ../DizzyGame/Graphics/tga.cpp ../DizzyGame/Graphics/tga.h \
+		../DizzyGame/IO/craiifilein.h \
+		../DizzyGame/IO/craiifileout.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/tga.o ../DizzyGame/Graphics/tga.cpp
+
+release/cautomath.o: ../DizzyGame/Interpreter/cautomath.cpp ../DizzyGame/Interpreter/cautomath.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cautomath.o ../DizzyGame/Interpreter/cautomath.cpp
+
+release/clexeme.o: ../DizzyGame/Interpreter/clexeme.cpp ../DizzyGame/Interpreter/clexeme.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/clexeme.o ../DizzyGame/Interpreter/clexeme.cpp
+
+release/clexicalanalyzer.o: ../DizzyGame/Interpreter/clexicalanalyzer.cpp ../DizzyGame/Interpreter/clexicalanalyzer.h \
+		../DizzyGame/Interpreter/cautomath.h \
+		../DizzyGame/Interpreter/clexeme.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/clexicalanalyzer.o ../DizzyGame/Interpreter/clexicalanalyzer.cpp
+
+release/csyntaxanalyzer.o: ../DizzyGame/Interpreter/csyntaxanalyzer.cpp ../DizzyGame/Interpreter/csyntaxanalyzer.h \
+		../DizzyGame/Interpreter/clexicalanalyzer.h \
+		../DizzyGame/Interpreter/cautomath.h \
+		../DizzyGame/Interpreter/clexeme.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Actions/iaction.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Conditionals/cconditionalofintersection.h \
+		../DizzyGame/Conditionals/cconditionalofdizzyintersection.h \
+		../DizzyGame/Conditionals/cconditionalofnotdizzyintersection.h \
+		../DizzyGame/Conditionals/cconditionalofuse.h \
+		../DizzyGame/Conditionals/cconditionalofpickup.h \
+		../DizzyGame/Conditionals/cconditionaloftimer.h \
+		../DizzyGame/Actions/cactionchangename.h \
+		../DizzyGame/Actions/cactionchangenameglobal.h \
+		../DizzyGame/Actions/cactionchangedescription.h \
+		../DizzyGame/Actions/cactionchangedescriptionglobal.h \
+		../DizzyGame/Actions/cactioncopyposition.h \
+		../DizzyGame/Actions/cactioncopypositionoffset.h \
+		../DizzyGame/Actions/cactionchangeposition.h \
+		../DizzyGame/Actions/cactionsetanimationstep.h \
+		../DizzyGame/Actions/cactionmessage.h \
+		../DizzyGame/Actions/cactionsingle.h \
+		../DizzyGame/Actions/cactionsetenabled.h \
+		../DizzyGame/Actions/cactionpickup.h \
+		../DizzyGame/Actions/cactionmove.h \
+		../DizzyGame/Actions/cactionenergyupdate.h \
+		../DizzyGame/Actions/cactionaddlife.h \
+		../DizzyGame/Actions/cactionaddscore.h \
+		../DizzyGame/Actions/cactionadditem.h \
+		../DizzyGame/Actions/cactionchangeanimationmode.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/csyntaxanalyzer.o ../DizzyGame/Interpreter/csyntaxanalyzer.cpp
+
+release/craiifilein.o: ../DizzyGame/IO/craiifilein.cpp ../DizzyGame/IO/craiifilein.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/craiifilein.o ../DizzyGame/IO/craiifilein.cpp
+
+release/craiifileout.o: ../DizzyGame/IO/craiifileout.cpp ../DizzyGame/IO/craiifileout.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/craiifileout.o ../DizzyGame/IO/craiifileout.cpp
+
+release/cmainwindow.o: ../DizzyGame/QtWindows/cmainwindow.cpp ../DizzyGame/QtWindows/cmainwindow.h \
 		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QMainWindow \
 		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qmainwindow.h \
 		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qwidget.h \
@@ -632,17 +889,17 @@ release/cmainwindow.o: ../DizzyGame/cmainwindow.cpp ../DizzyGame/cmainwindow.h \
 		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qtouchdevice.h \
 		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtabwidget.h \
 		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qicon.h \
-		../DizzyGame/ivideo.h \
-		../DizzyGame/cgame.h \
-		../DizzyGame/cfontprinter.h \
-		../DizzyGame/csprite.h \
-		../DizzyGame/tga.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/iconditionalexpression.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/cdizzy.h \
+		../DizzyGame/Video/ivideo.h \
+		../DizzyGame/Game/cgame.h \
+		../DizzyGame/Graphics/cfontprinter.h \
+		../DizzyGame/Graphics/csprite.h \
+		../DizzyGame/Graphics/tga.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Game/cdizzy.h \
 		ui_cmainwindow.h \
 		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/QVariant \
 		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QAction \
@@ -995,365 +1252,139 @@ release/cmainwindow.o: ../DizzyGame/cmainwindow.cpp ../DizzyGame/cmainwindow.h \
 		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtoolbox.h \
 		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtoolbutton.h \
 		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtwidgetsversion.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cmainwindow.o ../DizzyGame/cmainwindow.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cmainwindow.o ../DizzyGame/QtWindows/cmainwindow.cpp
 
-release/cactionadditem.o: ../DizzyGame/cactionadditem.cpp ../DizzyGame/cactionadditem.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionadditem.o ../DizzyGame/cactionadditem.cpp
+release/main.o: ../DizzyGame/QtWindows/main.cpp ../DizzyGame/QtWindows/cmainwindow.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QMainWindow \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qmainwindow.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qwidget.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qwindowdefs.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qglobal.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qconfig.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qfeatures.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qsystemdetection.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qprocessordetection.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qcompilerdetection.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qtypeinfo.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qtypetraits.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qisenum.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qsysinfo.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qlogging.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qflags.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qatomic.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qbasicatomic.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qatomic_bootstrap.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qgenericatomic.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qatomic_cxx11.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qatomic_msvc.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qglobalstatic.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qmutex.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qnumeric.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qversiontagging.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qobjectdefs.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qnamespace.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qobjectdefs_impl.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qwindowdefs_win.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qobject.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qstring.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qchar.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qbytearray.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qrefcount.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qarraydata.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qstringbuilder.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qlist.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qalgorithms.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qiterator.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qhashfunctions.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qpair.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qbytearraylist.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qstringlist.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qregexp.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qstringmatcher.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qcoreevent.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qscopedpointer.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qmetatype.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qvarlengtharray.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qcontainerfwd.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qobject_impl.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qmargins.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qpaintdevice.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qrect.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qsize.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qpoint.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qpalette.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qcolor.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qrgb.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qrgba64.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qbrush.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qvector.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qmatrix.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qpolygon.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qregion.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qdatastream.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qiodevice.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qline.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qtransform.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qpainterpath.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qimage.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qpixelformat.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qpixmap.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qsharedpointer.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qshareddata.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qhash.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qsharedpointer_impl.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qfont.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qfontmetrics.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qfontinfo.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qsizepolicy.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qcursor.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qkeysequence.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qevent.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qvariant.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qmap.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qdebug.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qtextstream.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qlocale.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qset.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qcontiguouscache.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qurl.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qurlquery.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qfile.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qfiledevice.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qvector2d.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qtouchdevice.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtabwidget.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qicon.h \
+		../DizzyGame/Video/ivideo.h \
+		../DizzyGame/Game/cgame.h \
+		../DizzyGame/Graphics/cfontprinter.h \
+		../DizzyGame/Graphics/csprite.h \
+		../DizzyGame/Graphics/tga.h \
+		../DizzyGame/Game/ipart.h \
+		../DizzyGame/Graphics/ctilessequence.h \
+		../DizzyGame/Graphics/ctile.h \
+		../DizzyGame/Conditionals/iconditionalexpression.h \
+		../DizzyGame/Game/cgamestate.h \
+		../DizzyGame/Game/cdizzy.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QApplication \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qapplication.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qcoreapplication.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtCore/qeventloop.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qguiapplication.h \
+		E:/Lang/Qt5.7.0/5.7/mingw53_32/include/QtGui/qinputmethod.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/main.o ../DizzyGame/QtWindows/main.cpp
 
-release/cactionaddlife.o: ../DizzyGame/cactionaddlife.cpp ../DizzyGame/cactionaddlife.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionaddlife.o ../DizzyGame/cactionaddlife.cpp
+release/system.o: ../DizzyGame/System/system.cpp ../DizzyGame/System/system.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/system.o ../DizzyGame/System/system.cpp
 
-release/cactionaddscore.o: ../DizzyGame/cactionaddscore.cpp ../DizzyGame/cactionaddscore.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionaddscore.o ../DizzyGame/cactionaddscore.cpp
+release/cvideo_software.o: ../DizzyGame/Video/cvideo_software.cpp ../DizzyGame/Video/cvideo_software.h \
+		../DizzyGame/Video/ivideo.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cvideo_software.o ../DizzyGame/Video/cvideo_software.cpp
 
-release/cactionchangeanimationmode.o: ../DizzyGame/cactionchangeanimationmode.cpp ../DizzyGame/cactionchangeanimationmode.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionchangeanimationmode.o ../DizzyGame/cactionchangeanimationmode.cpp
-
-release/cactionchangedescription.o: ../DizzyGame/cactionchangedescription.cpp ../DizzyGame/cactionchangedescription.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionchangedescription.o ../DizzyGame/cactionchangedescription.cpp
-
-release/cactionchangedescriptionglobal.o: ../DizzyGame/cactionchangedescriptionglobal.cpp ../DizzyGame/cactionchangedescriptionglobal.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionchangedescriptionglobal.o ../DizzyGame/cactionchangedescriptionglobal.cpp
-
-release/cactionchangename.o: ../DizzyGame/cactionchangename.cpp ../DizzyGame/cactionchangename.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionchangename.o ../DizzyGame/cactionchangename.cpp
-
-release/cactionchangenameglobal.o: ../DizzyGame/cactionchangenameglobal.cpp ../DizzyGame/cactionchangenameglobal.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionchangenameglobal.o ../DizzyGame/cactionchangenameglobal.cpp
-
-release/cactionchangeposition.o: ../DizzyGame/cactionchangeposition.cpp ../DizzyGame/cactionchangeposition.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionchangeposition.o ../DizzyGame/cactionchangeposition.cpp
-
-release/cactioncopyposition.o: ../DizzyGame/cactioncopyposition.cpp ../DizzyGame/cactioncopyposition.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactioncopyposition.o ../DizzyGame/cactioncopyposition.cpp
-
-release/cactioncopypositionoffset.o: ../DizzyGame/cactioncopypositionoffset.cpp ../DizzyGame/cactioncopypositionoffset.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactioncopypositionoffset.o ../DizzyGame/cactioncopypositionoffset.cpp
-
-release/cactionenergyupdate.o: ../DizzyGame/cactionenergyupdate.cpp ../DizzyGame/cactionenergyupdate.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionenergyupdate.o ../DizzyGame/cactionenergyupdate.cpp
-
-release/cactionmessage.o: ../DizzyGame/cactionmessage.cpp ../DizzyGame/cactionmessage.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionmessage.o ../DizzyGame/cactionmessage.cpp
-
-release/cactionmove.o: ../DizzyGame/cactionmove.cpp ../DizzyGame/cactionmove.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionmove.o ../DizzyGame/cactionmove.cpp
-
-release/cactionpickup.o: ../DizzyGame/cactionpickup.cpp ../DizzyGame/cactionpickup.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionpickup.o ../DizzyGame/cactionpickup.cpp
-
-release/cactionsetanimationstep.o: ../DizzyGame/cactionsetanimationstep.cpp ../DizzyGame/cactionsetanimationstep.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionsetanimationstep.o ../DizzyGame/cactionsetanimationstep.cpp
-
-release/cactionsetenabled.o: ../DizzyGame/cactionsetenabled.cpp ../DizzyGame/cactionsetenabled.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionsetenabled.o ../DizzyGame/cactionsetenabled.cpp
-
-release/cactionsingle.o: ../DizzyGame/cactionsingle.cpp ../DizzyGame/cactionsingle.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cactionsingle.o ../DizzyGame/cactionsingle.cpp
-
-release/cautomath.o: ../DizzyGame/cautomath.cpp ../DizzyGame/cautomath.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cautomath.o ../DizzyGame/cautomath.cpp
-
-release/cconditionalofdizzyintersection.o: ../DizzyGame/cconditionalofdizzyintersection.cpp ../DizzyGame/cconditionalofdizzyintersection.h \
-		../DizzyGame/iconditionalexpression.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/cgamestate.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cconditionalofdizzyintersection.o ../DizzyGame/cconditionalofdizzyintersection.cpp
-
-release/cconditionalofintersection.o: ../DizzyGame/cconditionalofintersection.cpp ../DizzyGame/cconditionalofintersection.h \
-		../DizzyGame/iconditionalexpression.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/cgamestate.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cconditionalofintersection.o ../DizzyGame/cconditionalofintersection.cpp
-
-release/cconditionalofnotdizzyintersection.o: ../DizzyGame/cconditionalofnotdizzyintersection.cpp ../DizzyGame/cconditionalofnotdizzyintersection.h \
-		../DizzyGame/iconditionalexpression.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/cgamestate.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cconditionalofnotdizzyintersection.o ../DizzyGame/cconditionalofnotdizzyintersection.cpp
-
-release/cconditionalofpickup.o: ../DizzyGame/cconditionalofpickup.cpp ../DizzyGame/cconditionalofpickup.h \
-		../DizzyGame/iconditionalexpression.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/cgamestate.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cconditionalofpickup.o ../DizzyGame/cconditionalofpickup.cpp
-
-release/cconditionaloftimer.o: ../DizzyGame/cconditionaloftimer.cpp ../DizzyGame/cconditionaloftimer.h \
-		../DizzyGame/iconditionalexpression.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/cgamestate.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cconditionaloftimer.o ../DizzyGame/cconditionaloftimer.cpp
-
-release/cconditionalofuse.o: ../DizzyGame/cconditionalofuse.cpp ../DizzyGame/cconditionalofuse.h \
-		../DizzyGame/iconditionalexpression.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/cgamestate.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cconditionalofuse.o ../DizzyGame/cconditionalofuse.cpp
-
-release/cdizzy.o: ../DizzyGame/cdizzy.cpp ../DizzyGame/cdizzy.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cdizzy.o ../DizzyGame/cdizzy.cpp
-
-release/cfontprinter.o: ../DizzyGame/cfontprinter.cpp ../DizzyGame/cfontprinter.h \
-		../DizzyGame/ivideo.h \
-		../DizzyGame/csprite.h \
-		../DizzyGame/tga.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cfontprinter.o ../DizzyGame/cfontprinter.cpp
-
-release/cgame.o: ../DizzyGame/cgame.cpp ../DizzyGame/cgame.h \
-		../DizzyGame/ivideo.h \
-		../DizzyGame/cfontprinter.h \
-		../DizzyGame/csprite.h \
-		../DizzyGame/tga.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/iconditionalexpression.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/cdizzy.h \
-		../DizzyGame/cpart.h \
-		../DizzyGame/csyntaxanalyzer.h \
-		../DizzyGame/clexicalanalyzer.h \
-		../DizzyGame/cautomath.h \
-		../DizzyGame/clexeme.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/system.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cgame.o ../DizzyGame/cgame.cpp
-
-release/cgamestate.o: ../DizzyGame/cgamestate.cpp ../DizzyGame/cgamestate.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cgamestate.o ../DizzyGame/cgamestate.cpp
-
-release/clexeme.o: ../DizzyGame/clexeme.cpp ../DizzyGame/clexeme.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/clexeme.o ../DizzyGame/clexeme.cpp
-
-release/clexicalanalyzer.o: ../DizzyGame/clexicalanalyzer.cpp ../DizzyGame/clexicalanalyzer.h \
-		../DizzyGame/cautomath.h \
-		../DizzyGame/clexeme.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/clexicalanalyzer.o ../DizzyGame/clexicalanalyzer.cpp
-
-release/cpart.o: ../DizzyGame/cpart.cpp ../DizzyGame/cpart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/ipart.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cpart.o ../DizzyGame/cpart.cpp
-
-release/craiifilein.o: ../DizzyGame/craiifilein.cpp ../DizzyGame/craiifilein.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/craiifilein.o ../DizzyGame/craiifilein.cpp
-
-release/craiifileout.o: ../DizzyGame/craiifileout.cpp ../DizzyGame/craiifileout.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/craiifileout.o ../DizzyGame/craiifileout.cpp
-
-release/csprite.o: ../DizzyGame/csprite.cpp ../DizzyGame/csprite.h \
-		../DizzyGame/ivideo.h \
-		../DizzyGame/tga.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/csprite.o ../DizzyGame/csprite.cpp
-
-release/csyntaxanalyzer.o: ../DizzyGame/csyntaxanalyzer.cpp ../DizzyGame/csyntaxanalyzer.h \
-		../DizzyGame/clexicalanalyzer.h \
-		../DizzyGame/cautomath.h \
-		../DizzyGame/clexeme.h \
-		../DizzyGame/iconditionalexpression.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/iaction.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/cconditionalofintersection.h \
-		../DizzyGame/cconditionalofdizzyintersection.h \
-		../DizzyGame/cconditionalofnotdizzyintersection.h \
-		../DizzyGame/cconditionalofuse.h \
-		../DizzyGame/cconditionalofpickup.h \
-		../DizzyGame/cconditionaloftimer.h \
-		../DizzyGame/cactionchangename.h \
-		../DizzyGame/cactionchangenameglobal.h \
-		../DizzyGame/cactionchangedescription.h \
-		../DizzyGame/cactionchangedescriptionglobal.h \
-		../DizzyGame/cactioncopyposition.h \
-		../DizzyGame/cactioncopypositionoffset.h \
-		../DizzyGame/cactionchangeposition.h \
-		../DizzyGame/cactionsetanimationstep.h \
-		../DizzyGame/cactionmessage.h \
-		../DizzyGame/cactionsingle.h \
-		../DizzyGame/cactionsetenabled.h \
-		../DizzyGame/cactionpickup.h \
-		../DizzyGame/cactionmove.h \
-		../DizzyGame/cactionenergyupdate.h \
-		../DizzyGame/cactionaddlife.h \
-		../DizzyGame/cactionaddscore.h \
-		../DizzyGame/cactionadditem.h \
-		../DizzyGame/cactionchangeanimationmode.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/csyntaxanalyzer.o ../DizzyGame/csyntaxanalyzer.cpp
-
-release/ctile.o: ../DizzyGame/ctile.cpp ../DizzyGame/ctile.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/ctile.o ../DizzyGame/ctile.cpp
-
-release/ctilessequence.o: ../DizzyGame/ctilessequence.cpp ../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/ctilessequence.o ../DizzyGame/ctilessequence.cpp
-
-release/cvideo_software.o: ../DizzyGame/cvideo_software.cpp ../DizzyGame/cvideo_software.h \
-		../DizzyGame/ivideo.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/cvideo_software.o ../DizzyGame/cvideo_software.cpp
-
-release/iaction.o: ../DizzyGame/iaction.cpp ../DizzyGame/iaction.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h \
-		../DizzyGame/cgamestate.h \
-		../DizzyGame/iconditionalexpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/iaction.o ../DizzyGame/iaction.cpp
-
-release/iconditionalexpression.o: ../DizzyGame/iconditionalexpression.cpp ../DizzyGame/iconditionalexpression.h \
-		../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/iconditionalexpression.o ../DizzyGame/iconditionalexpression.cpp
-
-release/ipart.o: ../DizzyGame/ipart.cpp ../DizzyGame/ipart.h \
-		../DizzyGame/ctilessequence.h \
-		../DizzyGame/ctile.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/ipart.o ../DizzyGame/ipart.cpp
-
-release/ivideo.o: ../DizzyGame/ivideo.cpp ../DizzyGame/ivideo.h \
-		../DizzyGame/cvideo_software.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/ivideo.o ../DizzyGame/ivideo.cpp
-
-release/system.o: ../DizzyGame/system.cpp ../DizzyGame/system.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/system.o ../DizzyGame/system.cpp
-
-release/tga.o: ../DizzyGame/tga.cpp ../DizzyGame/tga.h \
-		../DizzyGame/craiifilein.h \
-		../DizzyGame/craiifileout.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/tga.o ../DizzyGame/tga.cpp
+release/ivideo.o: ../DizzyGame/Video/ivideo.cpp ../DizzyGame/Video/ivideo.h \
+		../DizzyGame/Video/cvideo_software.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/ivideo.o ../DizzyGame/Video/ivideo.cpp
 
 release/moc_cmainwindow.o: release/moc_cmainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/moc_cmainwindow.o release/moc_cmainwindow.cpp
